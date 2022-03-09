@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: greenyellow;
+}
+
+h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+button{
+    background-color: red;
+    color: aliceblue;
+}
+
+h2{
+    color: red;
+}
+
+#textoIntro{
+    color: red;
+    text-align: center;
+}
+ 
