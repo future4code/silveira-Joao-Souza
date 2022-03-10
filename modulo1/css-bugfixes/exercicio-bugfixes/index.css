@@ -5,7 +5,7 @@
   **/
 
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -140,4 +140,5 @@ td button {
 }
 td{
     text-align: center;
+    
 }
