@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    
+    max-width: 100%;
+    align-items: center;
+}
+.profile{
+    border-radius: 30%;
+    margin-bottom: 5px;
+}
+li{
+    list-style: none;
+}
+body{
+    color: rgb(17, 212, 17);
+    font-family: 'VT323', monospace;
+    background: url(./img/stars-g9acc04e6a_1920.jpg) no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: normal;
+}
+.caixa{
+    margin: 70px;
+    background: rgba(0, 0, 0, 0.993);
+    padding: 3rem;
+    box-shadow: 2px 2px 16px rgba(purple,violet,purple,violet);
+    border-radius:  50px;
+    border-style: double;
+    text-align: center;
+}
+
+.sociais{
+    display: flex;
+    justify-content: center;
+}
+
+#ufo{
+    width: 30%;
+    height: 30%;
+}
+
+.title{
+    text-align: center;
+    margin: 50rem 0rem 50rem 0rem;
+    
+}
+
+.portfolio{
+    max-width: 800px;
+    margin-top: 2rem;
+    text-align: center;
+}
+.name1{
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+.projeto1{
+    margin-top: 2rem;
+}
+.name2{
+    
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+ 

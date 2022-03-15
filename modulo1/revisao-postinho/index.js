@@ -4,7 +4,7 @@
 
 // a-)Comparador de desigualdade a!==b 
 // Exemplo:
-
+/*
 function checarDesigualdade(a, b) {
 
     return `No comparador de desigualdade ${a}!==${b} é ${a !== b}`
@@ -42,35 +42,35 @@ console.log(verificaSeEMaior(2156, 321));
 
 // Exercício 3------------------------------------------------------------------------------------
 
-// const cadastro = () => {
-//     const usuario = []
+const cadastro = () => {
+    const usuario = []
 
     //  Sua lógica aqui
-//     const nomeDoUsuario = prompt('Digite seu nome.')
-//     const anoDeNascimento = Number(prompt('Digite a sua data de nascimento.'))
-//     const senhaDoUsuario = prompt('Digite sua senha.')
-//     const nacionalidae = prompt('Digite a sua nacionalidade.')
-//     const idade = (2022 - anoDeNascimento)
-//     if(idade < 18){
-//         return `Erro no cadastro.`
-//     }
-//     if(senhaDoUsuario.length < 6){
-//         return `Erro no cadastro`
-//     }
-//     if(nacionalidae !== 'br'){
-//         return `Erro no cadastro.`
-//     }
+    const nomeDoUsuario = prompt('Digite seu nome.')
+    const anoDeNascimento = Number(prompt('Digite a sua data de nascimento.'))
+    const senhaDoUsuario = prompt('Digite sua senha.')
+    const nacionalidae = prompt('Digite a sua nacionalidade.')
+    const idade = (2022 - anoDeNascimento)
+    if(idade < 18){
+        return `Erro no cadastro.`
+    }
+    if(senhaDoUsuario.length < 6){
+        return `Erro no cadastro`
+    }
+    if(nacionalidae !== 'br'){
+        return `Erro no cadastro.`
+    }
     
-//     const pessoa = {
-//         nomeDoUsuario:nomeDoUsuario, 
-//         anoDeNascimento:anoDeNascimento,
-//         senhaDoUsuario:senhaDoUsuario,
-//         nacionalidae:nacionalidae
-//     }
-//     usuario.push(pessoa)
+    const pessoa = {
+        nomeDoUsuario:nomeDoUsuario, 
+        anoDeNascimento:anoDeNascimento,
+        senhaDoUsuario:senhaDoUsuario,
+        nacionalidae:nacionalidae
+    }
+    usuario.push(pessoa)
 
-//     return usuario
-// }
+    return usuario
+}
 
 
 
@@ -106,9 +106,22 @@ const primeiraDose = () => {
 
 if(nomeVacina === 'Coronavac'){
     tempo = 28
-    data = data[0] + 28      
-    return `Olá ${seuNome}! A próxima dose da ${nomeVacina} é daqui a ${tempo} dias.`
+    data = '12/04/2022'
 
+        return `Olá ${seuNome}! A próxima dose da ${nomeVacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}`
+
+}
+if(nomeVacina === 'Astrazenica'){
+    tempo = 90
+    data = '15/06/2022'
+        
+    return `Olá ${seuNome}! A próxima dose da ${nomeVacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}`
+}
+if(nomeVacina === 'Pfizer'){
+    tempo = 90
+    data = '15/06/2022'
+
+    return `Olá ${seuNome}! A próxima dose da ${nomeVacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}`
 }
 }
 console.log(primeiraDose())
@@ -127,6 +140,11 @@ const segundaDose = (nomeDoUsuario) => {
 
     //  Sua lógica aqui
 
+    for (let i = 0 ; i<3 ; i++){
+        if(nomeDoUsuario === usuarios[i].nome){
+            usuarios[i].imunizacao = "completa"
+        }
+    }
 
 }
 console.log(segundaDose("Barbara"));
@@ -141,10 +159,15 @@ const avisoAosAtrasados = () => {
     ]
 
     //  Sua lógica aqui
+    for (let i = 0 ; i < usuarios.length ; i++){
+        if(usuarios[i].imunizacao !== "completa"){
+            console.log (`Olá ${usuarios[i].nome}! Sua imunização está ${usuarios[i].imunizacao}, por favor volte ao postinho para tomar a segunda dose.`)
+        }
+    }
 
 }
 console.log(avisoAosAtrasados());
-
+*/
 
 // DESAFIO------------------------------------------------------------------------------------------
 
@@ -178,7 +201,7 @@ const usuarios = [
 
 const cadastroDesafio = () => {
     //  Sua lógica aqui
-}
+    
 console.log(cadastroDesafio());
 
 const loginDesafio = () => {
